@@ -1,0 +1,260 @@
+/* RESET GENERAL */
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: #FAFAFA;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/*  CONTAINERS */
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+
+}
+.container-banner, 
+.container-form{
+    flex: 1 1 0;
+    width: 50%;
+
+}
+.container-banner{
+    text-align: right;
+
+}
+.container-banner img{
+    margin-right: -15px;
+
+}
+.container-form{
+    text-align: center;
+
+}
+
+/* FORM LOGIN */
+
+#form-box{
+    background-color: #FFF;
+    border: 1px solid #DBDBDB;
+    width: 350px;
+    margin-top: 30px;
+
+}
+
+#form-box #logo-insta{
+    width: 180px;
+    height: 55px;
+    margin: 30px auto 12px;
+    background-color: #FFF;
+
+}
+#login-form{
+    margin-top: 20px;
+
+}
+#login-form input{
+    display: block;
+    font-size: 12px;
+    padding: 12px 9px;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    width: 268px;
+    margin: 5px auto;
+
+}
+#login-form input[type=button]{
+    background-color: #B2DFFC;
+    color: #FFF;
+    margin-top: 15px;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0%;
+    font-size: 14px;
+    border-color: #B2DFFC;
+    cursor: pointer;
+    font-weight: 700;
+
+}
+
+/* SEPARATOR */
+
+.separator{
+    position: relative;
+
+}
+.separator .line{
+    border-top: 1px solid #DBDBDB;
+    margin: 25px auto 35px;
+    width: 268px;
+
+}
+.separator span{
+    position: absolute;
+    text-transform: uppercase;
+    width: 50px;
+    color: #BBB;
+    left: 50%;
+    margin-left: -25px;
+    top: -7px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+/* FACEBOOK LOGIN */
+
+.facebook-login{
+    margin-bottom: 25px;
+
+}
+.facebook-login a{
+    color: #385185;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.facebook-login img{
+    height: 16px;
+    width: 16px;
+    margin-right: 8px;
+
+}
+.facebook-login span{
+    margin-top: 1px;
+    font-size: 13px;
+    font-weight: 700;
+
+}
+
+/* FORGOT PASWORD */
+
+.forgot-pass{
+    font-size: 12px;
+    margin-bottom: 20px;
+
+}
+.forgot-pass a{
+    text-decoration: none;
+    color: #385185;
+
+}
+
+/* REGISTER */
+
+#register-container{
+    margin-top: 10px;
+    border: 1px solid #DBDBDB;
+    width: 350px;
+    padding: 25px;
+
+}
+#register-container p{
+    color: #262626;
+    font-size: 14px;
+
+}
+#register-container a{
+    text-decoration: none;
+    color: #0095f6;
+    font-weight: 700;
+
+}
+
+/* GET APP */
+
+#get-app-container{
+    width: 350px;
+    text-align: center;
+
+}
+#get-app-container p{
+    margin: 20px 0;
+    font-size: 14px;
+
+}
+#get-app-container a{
+    text-decoration: none;
+
+}
+#get-app-container img{
+    width: 135px;
+    height: 40px;
+
+}
+
+/* FOOTER */
+
+footer{
+    text-align: left;
+    width: 650px;
+    margin: 50px auto;
+    text-align: center;
+
+}
+footer .footer-links{
+    list-style: none;
+
+}
+footer .footer-links li{
+    display: inline-block;
+    text-transform: capitalize;
+    margin-right: 10px;
+
+}
+footer .footer-links li a{
+    text-decoration: none;
+    color: #8E8E8E;
+    font-size: 12px;
+    
+
+}
+#copyright{
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #8E8E8E;
+    margin-top: 15px;
+    text-align: center;
+
+}
+#copyright i{
+    cursor: pointer;
+    margin-right: 15px;
+
+}
+
+/* MOBILE DIVICE */
+
+@media(max-width: 450px){
+
+    .container-banner{
+        display: none;
+   
+    }
+    .main-container,
+    #form-box,
+    #register-container,
+    #get-app-container{
+        margin: 0%;
+        width: 100%;
+        border: none;
+
+    }
+    footer{
+        width: 90%;
+        text-align: center;
+
+    }
+    footer .footer-links li{
+        margin-bottom: 5px;
+
+    }
+
+}
